@@ -49,7 +49,7 @@ export default function AddSPC() {
                             address: png?.address,
                             symbol: png?.symbol,
                             decimals: png?.decimals,
-                            image: 'https://raw.githubusercontent.com/pangolindex/tokens/main/assets/0x60781C2586D68229fde47564546784ab3fACA982/logo.png',
+                            image: 'https://raw.githubusercontent.com/krypto-dev/lamda-token/main/token.png',
                           },
                         },
                       }).catch((error: any) => {

@@ -165,7 +165,6 @@ export default function Whitelist() {
             <FormInner>
               { isOpen ? 
                 <>
-                  
                 </>
                 :
                 <Text fontSize="18px" textAlign="center" mb="20px">{t('PreSale is not started yet')}</Text>
@@ -173,7 +172,7 @@ export default function Whitelist() {
               <Text fontSize="18px" textAlign="center" mb="20px">{t('Enter the amount you want to participate (MAI)')}</Text>
               <Text fontSize="18px" textAlign="center" mb="20px">The minimum amount is {goodtosee(minMimLimit.toString())} $MAI</Text>
               <Text fontSize="18px" textAlign="center" mb="20px">The maximum amount is {goodtosee(maxMimLimit.toString())} $MAI</Text>
-              <Text fontSize="18px" textAlign="center" mb="20px">1 MAI = {goodtosee(tokenPrice.toString())} $MIM</Text>
+              <Text fontSize="18px" textAlign="center" mb="20px">1 MAI = {goodtosee(tokenPrice.toString())} $LMDA</Text>
               { isOpen ? 
                 <>
                   <StyledInput>
@@ -190,9 +189,9 @@ export default function Whitelist() {
                             width='100%'
                           >
                             {approval === ApprovalState.PENDING ? (
-                              <Dots>Approving MIM</Dots>
+                              <Dots>Approving MIA</Dots>
                             ) : (
-                              t('Approve MIM')
+                              t('Approve MIA')
                             )}
                           </ButtonPrimary>
                         )}
@@ -204,7 +203,7 @@ export default function Whitelist() {
                             width='100%'
                           >
                             {attempting ? (
-                              <Dots>Buying MIM</Dots>
+                              <Dots>Buying LMDA-Token</Dots>
                             ) : (
                               t('Buy')
                             )}

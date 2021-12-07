@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { MessageCircle, Send, Twitter } from 'react-feather'
+import { MessageCircle, Twitter } from 'react-feather'
 import styled from 'styled-components'
 import { useOnClickOutside } from '../../hooks/useOnClickOutside'
 import { ApplicationModal } from '../../state/application/actions'
@@ -32,15 +32,11 @@ export default function Menu() {
 
       {open && (
         <NarrowMenuFlyout>
-          <MenuItem id="link" href="https://t.me/pangolindex">
-            <Send size={14} />
-            {t('menu.telegram')}
-          </MenuItem>
-          <MenuItem id="link" href="https://discord.com/invite/PARrDYYbfw">
+          <MenuItem id="link" href="https://discord.com/invite/BSsN6tn3YC">
             <MessageCircle size={14} />
             {t('menu.discord')}
           </MenuItem>
-          <MenuItem id="link" href="https://twitter.com/pangolindex">
+          <MenuItem id="link" href="https://twitter.com/DaoLambda">
             <Twitter size={14} />
             {t('menu.twitter')}
           </MenuItem>

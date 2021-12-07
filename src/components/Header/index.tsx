@@ -417,7 +417,7 @@ export default function Header() {
                     </TYPE.white>
                   </HideSmall>
                 )}
-                MAI
+                LMDA
               </PNGAmount>
               <CardNoise />
             </PNGWrapper>
